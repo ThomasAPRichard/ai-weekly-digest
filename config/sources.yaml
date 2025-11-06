@@ -1,0 +1,17 @@
+sources:
+  - name: "Hacker News (frontpage)"
+    type: "rss"
+    url: "https://hnrss.org/frontpage"
+
+  - name: "arXiv cs.AI (recent)"
+    type: "rss"
+    url: "https://rss.arxiv.org/rss/cs.AI"
+
+  - name: "The Neuron — Explainers"
+    type: "html"
+    url: "https://www.theneuron.ai/articles"
+    strategy: "neuron_articles"
+
+  - name: "DataScientest — News (EN)"
+    type: "rss"
+    url: "https://datascientest.com/en/category/news/feed"
