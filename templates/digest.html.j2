@@ -26,12 +26,12 @@
     </div>
 
     {% for group in groups %}
-      <h2>{{ group.name }} ({{ group.items|length }})</h2>
-      {% if group.items|length == 0 %}
+      <h2>{{ group.name }} ({{ group["items"]|length }})</h2>
+      {% if group["items"]|length == 0 %}
         <p class="source">Rien de nouveau cette semaine.</p>
       {% else %}
         <ul>
-          {% for it in group.items %}
+          {% for it in group["items"] %}
             <li>
               <a href="{{ it.url }}">{{ it.title }}</a>
               {% if it.published %}
